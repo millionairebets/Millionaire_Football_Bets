@@ -62,3 +62,9 @@ else:
         else:
             result = "🤝 Empate"
 
+        # Risco estimado (quanto maior a probabilidade, menor o risco)
+        risk = int(10 - (max(proba) * 10))
+
+        st.markdown(f"🔮 **Previsão 1X2:** {result}")
+        st.markdown(f"⚖️ **Nível de Risco:** {risk}/10")
+        st.divider()
